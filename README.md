@@ -1,5 +1,7 @@
 # Arduino Auto
 
+![c5314cb9-837c-4445-99a3-fc61a4d38c56](https://cloud.githubusercontent.com/assets/21289932/25248952/6044145a-2610-11e7-8672-9535b41763db.jpg)
+
 
 ## Selbst erstellte Library Schrittmotor
 
