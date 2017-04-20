@@ -1,0 +1,10 @@
+Projektdarstellung
+
+Sie sollen ein Auto bauen, welches mit zwei Schrittmotoren angetrieben wird. 
+Die Steuerung des Autos erfolgt über einen Arduino. 
+Das fertige Auto soll in der Lage sein selbstständig einen Weg durch ein Labyrinth zu finden.
+Der Arduino hat Folgende Aufgabne zu erledigen:
+  - Erzeugung des umlaufenden Feldes für die Motoren
+  - Ansteuerung und Auswertung eines Ultraschallsensors
+  - Kurskorrekturen
+  - Als Spannungsquelle werden Lipo Akku Zellen verwendet
