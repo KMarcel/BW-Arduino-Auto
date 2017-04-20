@@ -11,7 +11,7 @@ Einbinden der Library in den Arduino Kopf
 #include <Schrittmotor.h>
 ```
 ### Pins
-![test](https://cloud.githubusercontent.com/assets/21289932/25196996/b00b48ec-2542-11e7-8a40-eb81a331f3d4.png)
+![asdasda](https://cloud.githubusercontent.com/assets/21289932/25250606/91d850ca-2616-11e7-9a88-79282840878d.png)
 ### Funktionen
 
 #### Konstruktor 
