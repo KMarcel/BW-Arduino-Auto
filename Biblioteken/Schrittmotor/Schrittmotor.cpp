@@ -1,16 +1,29 @@
+/****************************************************************************
+ Titel	:   Schrittmotoren Library für das Projekt Arduino Auto
+ Autor:    Marcel Kühl <Marcel.Kuehl@web.de>  http://github.com/KMarcel
+ Datei:	    Schrittmotor.cpp
+ Software:  Arduino IDE
+ Beschreibung
+       In dieser Schrittmotor.cpp Datei sind alle wichtigen Funktionen
+	   zum Ansteuern beider Schrittmotoren vorhanden
+       
+*****************************************************************************/
 #include <Arduino.h>
 #include <Schrittmotor.h>
 Schrittmotor::Schrittmotor(int Pin1, int Pin2, int Pin3, int Pin4,
 			   int Pin5, int Pin6, int Pin7, int Pin8)
 {
-	this->Pin1 = Pin1;
-	this->Pin2 = Pin2;
-	this->Pin3 = Pin3;
-	this->Pin4 = Pin4;
-	this->Pin5 = Pin5;
-	this->Pin6 = Pin6;
-	this->Pin7 = Pin7;
-	this->Pin8 = Pin8;
+	
+/** Die Übertragen Pins werden nun in Globale Variablen gespeichert die man in anderen Funktionen verwenden kann **/
+/** this-> stellt die Globale Variable dar **/
+this->Pin1 = Pin1;
+this->Pin2 = Pin2;
+this->Pin3 = Pin3;
+this->Pin4 = Pin4;
+this->Pin5 = Pin5;
+this->Pin6 = Pin6;
+this->Pin7 = Pin7;
+this->Pin8 = Pin8;
 	
 	pinMode(Pin1, OUTPUT);
 	pinMode(Pin2, OUTPUT);
@@ -21,14 +34,14 @@ Schrittmotor::Schrittmotor(int Pin1, int Pin2, int Pin3, int Pin4,
 	pinMode(Pin7, OUTPUT);
 	pinMode(Pin8, OUTPUT);
 	
-	this->Real[0] = Pin1;
-	this->Real[1] = Pin2;
-	this->Real[2] = Pin3;
-	this->Real[3] = Pin4;
-	this->Real[4] = Pin5;
-	this->Real[5] = Pin6;
-	this->Real[6] = Pin7;
-	this->Real[7] = Pin8;
+	this->Standart[0] = Pin1;
+	this->Standart[1] = Pin2;
+	this->Standart[2] = Pin3;
+	this->Standart[3] = Pin4;
+	this->Standart[4] = Pin5;
+	this->Standart[5] = Pin6;
+	this->Standart[6] = Pin7;
+	this->Standart[7] = Pin8;
 	
 	this->Speed = 0;
 }
@@ -38,14 +51,14 @@ void Schrittmotor::setNewSpeed(int speed)
 }
 void Schrittmotor::Update()
 {
-	this->Pin1 = Real[0];
-	this->Pin2 = Real[1];
-	this->Pin3 = Real[2];
-	this->Pin4 = Real[3];
-	this->Pin5 = Real[4];
-	this->Pin6 = Real[5];
-	this->Pin7 = Real[6];
-	this->Pin8 = Real[7];
+	this->Pin1 = Standart[0];
+	this->Pin2 = Standart[1];
+	this->Pin3 = Standart[2];
+	this->Pin4 = Standart[3];
+	this->Pin5 = Standart[4];
+	this->Pin6 = Standart[5];
+	this->Pin7 = Standart[6];
+	this->Pin8 = Standart[7];
 }
 void Schrittmotor::Schritte()
 {
