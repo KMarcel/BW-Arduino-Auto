@@ -18,8 +18,6 @@ for(int i = 0; i<=7; i++)
    this->Standart[i] = PinOuts[i];
    pinMode(PinOuts[i], OUTPUT);
 }
-	pinMode(Trig, OUTPUT);
-  	pinMode(Echo, INPUT);
 	this->Trig = Trig;
 	this->Echo = Echo;
 	this->interval = interval;
@@ -115,6 +113,60 @@ void BW_Auto::Right()
 		Schritte(Schritt, this->PinOuts[1],this->PinOuts[0],this->PinOuts[2],this->PinOuts[3]);
 		Schritte(Schritt, this->PinOuts[4],this->PinOuts[5],this->PinOuts[6],this->PinOuts[7]);
 		delayMicroseconds(this->Speed);		
+	}
+}
+
+void BW_Auto::Forwards(int Anzahl)
+{
+	Update();
+	for(int i = 0; i<Anzahl; i++)
+	{
+		for(int Schritt = Schritt_1; Schritt<=Schritt_4; Schritt++ )
+		{
+			Schritte(Schritt, this->PinOuts[0],this->PinOuts[1],this->PinOuts[2],this->PinOuts[3]);
+			Schritte(Schritt, this->PinOuts[4],this->PinOuts[5],this->PinOuts[6],this->PinOuts[7]);
+			delayMicroseconds(this->Speed);		
+		}
+	}
+	
+}
+void BW_Auto::Backwards(int Anzahl)
+{
+	Update();
+	for(int i = 0; i<Anzahl; i++)
+	{
+		for(int Schritt = Schritt_1; Schritt<=Schritt_4; Schritt++ )
+		{
+			Schritte(Schritt, this->PinOuts[1],this->PinOuts[0],this->PinOuts[2],this->PinOuts[3]);
+			Schritte(Schritt, this->PinOuts[5],this->PinOuts[4],this->PinOuts[6],this->PinOuts[7]);
+			delayMicroseconds(this->Speed);		
+		}
+	}
+}
+void BW_Auto::Left(int Anzahl)
+{
+	Update();
+	for(int i = 0; i<Anzahl; i++)
+	{
+		for(int Schritt = Schritt_1; Schritt<=Schritt_4; Schritt++ )
+		{
+			Schritte(Schritt, this->PinOuts[0],this->PinOuts[1],this->PinOuts[2],this->PinOuts[3]);
+			Schritte(Schritt, this->PinOuts[5],this->PinOuts[4],this->PinOuts[6],this->PinOuts[7]);
+			delayMicroseconds(this->Speed);		
+		}
+	}
+}
+void BW_Auto::Right(int Anzahl)
+{
+	Update();
+	for(int i = 0; i<Anzahl; i++)
+	{
+		for(int Schritt = Schritt_1; Schritt<=Schritt_4; Schritt++ )
+		{
+			Schritte(Schritt, this->PinOuts[1],this->PinOuts[0],this->PinOuts[2],this->PinOuts[3]);
+			Schritte(Schritt, this->PinOuts[4],this->PinOuts[5],this->PinOuts[6],this->PinOuts[7]);
+			delayMicroseconds(this->Speed);		
+		}
 	}
 }
 
