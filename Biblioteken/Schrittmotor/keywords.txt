@@ -1,9 +1,0 @@
-#KLASSEN
-Schrittmotor   KEYWORD1
-
-#FUNKTIONEN
-setNewSpeed    KEYWORD2
-Forwards     KEYWORD2
-Backwards     KEYWORD2
-Left     KEYWORD2
-Right     KEYWORD2
