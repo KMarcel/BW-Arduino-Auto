@@ -85,7 +85,7 @@ Objektname        = das ist der Objektname dieser kann einen x belibigen namen b
 ();
 `````
 
-####Konstruktor
+#### Konstruktor
 
  ```Arduino
 Sensor <Objektname>(Trig, Echo, Interval);
@@ -100,7 +100,7 @@ Objektname        = das ist der Objektname dieser kann einen x belibigen namen b
  );
 `````
 
-####Distanz Messung
+#### Distanz Messung
  ```Arduino
 <Objektname>.distanz();
 ```
