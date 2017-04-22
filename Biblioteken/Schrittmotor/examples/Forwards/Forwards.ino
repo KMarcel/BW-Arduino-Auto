@@ -1,11 +1,13 @@
 #include <Schrittmotor.h>
-byte *PinOut = {0, 1, 2, 3, 8, 9, 10, 11};
-Schrittmotor Motoren(PinOut);
+int Pins[8] = {3, 4, 5, 6, 8, 9, 10, 11};
+Schrittmotor Motoren(Pins);
+Sensor Ultraschall(1, 2, 2000);
 
 void setup() {
-  Motoren.setNewSpeed(3000);
+  Serial.begin(9600);
 }
 
 void loop() {
-    Motoren.Forwards();
+  Ultraschall.distanz();
+  Motoren.Forwards();
 }
