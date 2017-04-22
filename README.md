@@ -15,9 +15,9 @@ Einbinden der Library in den Arduino Kopf
 ### Funktionen
 
 #### Konstruktor 
-// return nichts
+
  ```Arduino
-int Pins[8] = {Pin 1, Pin 2, Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8}
+int Pins[8] = {Pin 1, Pin 2, Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8};
 Schrittmotor <Objektname>(Pins);
 ```
 `````
@@ -85,3 +85,28 @@ Objektname        = das ist der Objektname dieser kann einen x belibigen namen b
 ();
 `````
 
+####Konstruktor
+
+ ```Arduino
+Sensor <Objektname>(Trig, Echo, Interval);
+```
+`````
+Sensor            = heißt die Klasse die ein neues Objekt erzeugen soll
+Objektname        = das ist der Objektname dieser kann einen x belibigen namen besitzen
+(
+  Trig Pin        = Trigger Pin
+  Echo Pin        = Echo Pin
+  Interval        = Zeit für eine 
+ );
+`````
+
+####Distanz Messung
+ ```Arduino
+<Objektname>.distanz();
+```
+`````
+"Objektname"        = Der Objektname
+"."                 = Ruft eine Public (Öffentliche) Funktion der Klasse auf
+"distanz"         = Name der Funktion in der Klasse
+();
+`````
