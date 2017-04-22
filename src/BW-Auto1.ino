@@ -11,10 +11,10 @@ void loop() {
   Ergebnis = Auto.distanz();
   if(Ergebnis > 30)
   {
-    Motoren.Forwards();
+    Auto.Forwards();
   }
   if(Ergebnis < 30)
   {
-    Motoren.Left();
+    Auto.Left();
   }
 }
