@@ -12,7 +12,7 @@ Einbinden der Library in den Arduino Kopf
 ```
 ### Pins
 ![asdasda](https://cloud.githubusercontent.com/assets/21289932/25250606/91d850ca-2616-11e7-9a88-79282840878d.png)
-### Funktionen
+### Schrittmotor Funktionen
 
 #### Konstruktor 
 
@@ -84,6 +84,7 @@ Objektname        = das ist der Objektname dieser kann einen x belibigen namen b
 "Backwards"         = Name der Funktion in der Klasse
 ();
 `````
+### Sensor Funktionen
 
 #### Konstruktor
 
