@@ -18,6 +18,8 @@ for(int i = 0; i<=7; i++)
    this->Standart[i] = PinOuts[i];
    pinMode(PinOuts[i], OUTPUT);
 }
+	pinMode(Trig, OUTPUT);
+  	pinMode(Echo, INPUT);
 	this->Trig = Trig;
 	this->Echo = Echo;
 	this->interval = interval;
