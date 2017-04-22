@@ -16,21 +16,15 @@ Einbinden der Library in den Arduino Kopf
 
 #### Konstruktor 
 // return nichts
- ```c++
-Schrittmotor <Objektname>(Pin 1, Pin 2, Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8);
+ ```Arduino
+int Pins[8] = {Pin 1, Pin 2, Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8}
+Schrittmotor <Objektname>(Pins);
 ```
 `````
 Schrittmotor      = heißt die Klasse die ein neues Objekt erzeugen soll
 Objektname        = das ist der Objektname dieser kann einen x belibigen namen besitzen
 (
-  Pin 1,            = Pin "B" vom ersten Schrittmotor
-  Pin 2,            = Pin "B Nicht" vom ersten Schrittmotor
-  Pin 3,            = Pin "A" vom ersten Schrittmotor
-  Pin 4,            = Pin "A Nicht" vom ersten Schrittmotor
-  Pin 5,            = Pin "B" vom zweiten Schrittmotor
-  Pin 6,            = Pin "B Nicht" vom zweiten Schrittmotor
-  Pin 7,            = Pin "A" vom zweiten Schrittmotor
-  Pin 8             = Pin "A Nicht" vom zweiten Schrittmotor
+  Pins            = Pin Array
  );
 `````
  #### Setze Geschwindigkeit
