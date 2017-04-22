@@ -79,6 +79,7 @@ BW_Auto(int *PinOuts, int Trig, int Echo, unsigned int interval);
  @return   none
 */
 void Left(void);
+void Left(int Anzahl);
 
 
 /**
@@ -87,7 +88,7 @@ void Left(void);
  @return   none
 */
 void Right(void);
-
+void Right(int Anzahl);
 
 /**
  @brief    Motor 1 läuft Vorwärts Motor 2 läuft Vorwärts
@@ -95,7 +96,7 @@ void Right(void);
  @return   none
 */
 void Forwards(void);
-
+void Forwards(int Anzahl);
 
 /**
  @brief    Motor 1 läuft Rückwärts Motor 2 läuft Rückwärts
@@ -103,7 +104,7 @@ void Forwards(void);
  @return   none
 */
 void Backwards(void);
-
+void Backwards(int Anzahl);
 /**
  @brief    Hier kann man eine Neue Geschwindigkeit für die einzelenen Halbschritte festlegen.
  @param    void                                        
