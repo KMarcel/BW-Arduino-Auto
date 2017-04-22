@@ -75,7 +75,7 @@ void Schrittmotor::Forwards()
 	{
 		Schritte(Schritt, this->PinOuts[0],this->PinOuts[1],this->PinOuts[2],this->PinOuts[3]);
 		Schritte(Schritt, this->PinOuts[4],this->PinOuts[5],this->PinOuts[6],this->PinOuts[7]);
-		delay(this->Speed);		
+		delayMicroseconds(this->Speed);		
 	}
 }
 void Schrittmotor::Backwards()
@@ -98,7 +98,7 @@ void Schrittmotor::Left()
 	{
 		Schritte(Schritt, this->PinOuts[0],this->PinOuts[1],this->PinOuts[2],this->PinOuts[3]);
 		Schritte(Schritt, this->PinOuts[5],this->PinOuts[4],this->PinOuts[6],this->PinOuts[7]);
-		delay(this->Speed);		
+		delayMicroseconds(this->Speed);		
 	}
 }
 void Schrittmotor::Right()
