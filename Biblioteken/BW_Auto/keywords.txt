@@ -1,0 +1,22 @@
+#######################################
+# Syntax Coloring Map for library MFRC522
+#######################################
+
+#######################################
+# KEYWORD1 Classes, datatypes, and C++ keywords
+#######################################
+BW_Auto	KEYWORD1
+Auto	KEYWORD1
+ 
+#######################################
+# KEYWORD2 Methods and functions
+#######################################
+
+# Basic interface functions for communicating with the MFRC522
+setNewSpeed	KEYWORD2
+Forwards	KEYWORD2
+Backwards	KEYWORD2
+Left	KEYWORD2
+Right	KEYWORD2
+distanz	KEYWORD2
+
