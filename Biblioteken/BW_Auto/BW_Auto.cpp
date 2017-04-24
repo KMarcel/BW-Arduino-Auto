@@ -1,5 +1,5 @@
 /****************************************************************************
- Titel	:   BW_Autoen Library für das Projekt Arduino Auto
+ Titel	:   BW_Auto Library für das Projekt Arduino Auto
  Autor:    Marcel Kühl <Marcel.Kuehl@web.de>  http://github.com/KMarcel
  Datei:	    BW_Auto.cpp
  Software:  Arduino IDE
