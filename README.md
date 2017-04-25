@@ -8,7 +8,7 @@
 ### Einbinden der Library
 Einbinden der Library in den Arduino Kopf
 ```sh
-#include <Schrittmotor.h>
+#include <BW_Auto.h>
 ```
 ### Pins
 ![asdasda](https://cloud.githubusercontent.com/assets/21289932/25406892/9b9c42b0-2a08-11e7-9c41-8f75b44c1005.png)
@@ -18,10 +18,10 @@ Einbinden der Library in den Arduino Kopf
 
  ```Arduino
 int Pins[8] = {Pin 1, Pin 2, Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8};
-Schrittmotor <Objektname>(Pins);
+BW_Auto <Objektname>(Pins);
 ```
 `````
-Schrittmotor      = heißt die Klasse die ein neues Objekt erzeugen soll
+BW_Auto      = heißt die Klasse die ein neues Objekt erzeugen soll
 Objektname        = das ist der Objektname dieser kann einen x belibigen namen besitzen
 (
   Pins            = Pin Array
@@ -84,26 +84,9 @@ Objektname        = das ist der Objektname dieser kann einen x belibigen namen b
 "Backwards"         = Name der Funktion in der Klasse
 ();
 `````
-### Sensor Funktionen
-
-#### Konstruktor
-
- ```Arduino
-Sensor <Objektname>(Trig, Echo, Interval);
-```
-`````
-Sensor            = heißt die Klasse die ein neues Objekt erzeugen soll
-Objektname        = das ist der Objektname dieser kann einen x belibigen namen besitzen
-(
-  Trig Pin        = Trigger Pin
-  Echo Pin        = Echo Pin
-  Interval        = Zeit für eine 
- );
-`````
-
 #### Distanz Messung
  ```Arduino
-<Objektname>.distanz();
+<Objektname>.distanz(Millis Aktivieren);
 ```
 `````
 "Objektname"        = Der Objektname
