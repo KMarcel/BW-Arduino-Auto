@@ -1,31 +1,32 @@
 #include <BW_Auto.h>
-int Abstand = 0;
-int Pins[8] = {3, 4, 5, 6, 8, 9, 10, 11};
-BW_Auto Auto(Pins, 1, 2, 2000);
+BW_Auto Auto(3, 2, 0, 1, 8, 9, 10, 11, 7, 6, 100);
+unsigned long An = 0;
 
 void setup() {
-  Auto.setNewSpeed(2000);
+  Auto.setNewSpeed(2500);
 }
 
 void loop() {
-  Abstand = Auto.distanz();
-  if(Abstand > 30)
-  {
-    Auto.Forwards();
-  }
-  if(Abstand < 30)
-  {
-    Auto.Backwards(20);
-    Auto.Left(90);
-    Abstand = Auto.distanz();
-    if(Abstand < 50)
+    An = Auto.distanz(false);
+    if(An >= 15)
     {
-      Auto.Right(180); 
-      Abstand = Auto.distanz();
-      if(Abstand < 50)
+      Auto.Forwards();
+    }else
+    {
+      Auto.Backwards(20);
+      Auto.Left(50);
+      delay(1000);
+      An = Auto.distanz(true);
+      if(An < 15)
       {
-        Auto.Right(90);
+        Auto.Right(95);
+        delay(1000);
+        An = Auto.distanz(true);
+        if(An < 15)
+        {
+          Auto.Right(50);
+        }
       }
-    }     
-  }
+    }
+    
 }
