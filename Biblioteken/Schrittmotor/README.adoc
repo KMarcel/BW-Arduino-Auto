@@ -1,4 +1,0 @@
-= Schrittmotor Library fuer Arduino =
-
-Fuer mehr informationen besuchen sie doch unsere Github Seite
-https://github.com/KMarcel/Arduino-Auto/
