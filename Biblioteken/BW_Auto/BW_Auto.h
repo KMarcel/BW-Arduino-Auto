@@ -34,7 +34,7 @@ int Trig = 0;
 int Echo = 0;
 
 
-unsigned long Messung = 0;
+
 
 /** in diesem Int Array werden die Standart Pins hinterlegt **/
 int Standart[8];
@@ -43,7 +43,15 @@ int Standart[8];
 unsigned int Speed;
 
 /** Pins 1 bis 8 **/
-int PinOuts[8];
+
+		int Pin1 = 0;
+		int Pin2 = 0;
+		int Pin3 = 0;
+		int Pin4 = 0;
+		int Pin5 = 0;
+		int Pin6 = 0;
+		int Pin7 = 0;
+		int Pin8 = 0;
 
 /** Stepper als eigene Variablen **/
 enum Stepper {Schritt_1, Schritt_2, Schritt_3, Schritt_4};
@@ -53,7 +61,7 @@ enum Stepper {Schritt_1, Schritt_2, Schritt_3, Schritt_4};
  @param    void                                        
  @return   none
 */
-void Schritte(Stepper Schritte, int Pin1, int Pin2, int Pin3, int Pin4);
+void Schritte();
 
 
 /**
@@ -61,9 +69,7 @@ void Schritte(Stepper Schritte, int Pin1, int Pin2, int Pin3, int Pin4);
  @param    void                                        
  @return   none
 */
-void Update(void);
-
-	
+void Update(void);	
 // Öffentliche Funktionen die man außerhaben mit einem Objekt aufrufen kann
 public:
 /**
@@ -71,7 +77,7 @@ public:
  @param    void                                        
  @return   none
 */
-BW_Auto(int *PinOuts, int Trig, int Echo, unsigned int interval);
+BW_Auto(int Pin1, int Pin2, int Pin3, int Pin4, int Pin5, int Pin6, int Pin7, int Pin8,int Trig, int Echo, unsigned int interval);
 				 
 /**
  @brief    Motor 1 läuft Vorwärts Motor 2 läuft Rückwärts
@@ -117,7 +123,7 @@ void setNewSpeed(int speed);
  @param    void                                        
  @return   none
 */
-unsigned long distanz();
+unsigned long distanz(bool M);
 
 };
 #endif
