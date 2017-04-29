@@ -11,7 +11,7 @@ Einbinden der Library in den Arduino Kopf
 #include <BW_Auto.h>
 ```
 ### Pins
-![test](https://cloud.githubusercontent.com/assets/21289932/25502274/45665fae-2b96-11e7-999e-bb32d222822f.png)
+![asdasda](https://cloud.githubusercontent.com/assets/21289932/25554752/a09e3e92-2cd5-11e7-95a4-f4760356b15b.png)
 
 ### Schrittmotor Funktionen
 
