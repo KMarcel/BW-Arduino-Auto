@@ -18,8 +18,7 @@ Einbinden der Library in den Arduino Kopf
 #### Konstruktor 
 
  ```Arduino
-int Pins[8] = {Pin 1, Pin 2, Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8};
-BW_Auto <Objektname>(Pins);
+BW_Auto <Objektname>(Pin1, Pin2 , Pin 3, Pin 4, Pin 5, Pin 6, Pin 7, Pin 8, Echo, Trig, Interval);
 ```
 `````
 BW_Auto      = heißt die Klasse die ein neues Objekt erzeugen soll
