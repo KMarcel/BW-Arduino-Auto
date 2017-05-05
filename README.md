@@ -84,6 +84,16 @@ Objektname        = das ist der Objektname dieser kann einen x belibigen namen b
 "Backwards"         = Name der Funktion in der Klasse
 ();
 `````
+#### Distanz Messungs Interval
+ ```Arduino
+<Objektname>.setInterval(Millis Aktivieren);
+```
+`````
+"Objektname"        = Der Objektname
+"."                 = Ruft eine Public (Öffentliche) Funktion der Klasse auf
+"setInterval"       = Name der Funktion in der Klasse
+();
+`````
 #### Distanz Messung
  ```Arduino
 <Objektname>.distanz(Millis Aktivieren);
