@@ -26,12 +26,14 @@ void loop() {
   }
   if(An >= 15)
   {
+    Auto.setNewSpeed(3000);
     Auto.Forwards();
   }else{
     Links = 0;
-    while(An < 15 && Links < 90)
+    Auto.setNewSpeed(7000);
+    while(An < 15 && Links < 10)
     {      
-      Auto.Left(5);
+      Auto.Left(4);
       An = Auto.distanz(false);
       Links++;
     }
