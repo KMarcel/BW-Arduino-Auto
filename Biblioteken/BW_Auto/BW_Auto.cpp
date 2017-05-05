@@ -192,11 +192,14 @@ void BW_Auto::Right(int Anzahl)
 	this->Pin2 = Zwischenspeicher1;
 	for(int i = 0; i<Anzahl; i++)
 	{
-		Schritte();	
+		Schritte();
 	}
 }
 
-
+void BW_Auto::setInterval(unsigned int Interval)
+{
+	this->interval = Interval;
+}
 
 unsigned long BW_Auto::distanz(bool M)
 {
