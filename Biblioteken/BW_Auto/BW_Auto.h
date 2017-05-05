@@ -117,7 +117,7 @@ void Backwards(int Anzahl);
  @return   none
 */
 void setNewSpeed(int speed);
-
+void setInterval(unsigned int Interval);
 /**
  @brief    Konfiguriert die Pins für die BW_Autoen und ist wichtig für die erstellung von einem Objekt
  @param    void                                        
